@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  font-style: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+img {
+  display: block;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+.title--second {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+.position {
+  position: relative;
+}
+.position__text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
