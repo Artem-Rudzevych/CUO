@@ -10,8 +10,9 @@
   text-align: center;
   padding-top: 85px;
   padding-bottom: 400px;
-  padding-right: 100px;
+  padding-right: 150px;
 }
+
 .hero__img {
   position: absolute;
   top: 10%;
@@ -30,5 +31,9 @@
   position: absolute;
   bottom: 0;
   left: 10%;
+  font-size: 30px;
   // transform: translate(-50%, -50%);
+}
+.hero__bg {
+  background-color: #fff;
 }

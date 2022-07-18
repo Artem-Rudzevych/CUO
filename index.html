@@ -9,10 +9,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="hero__bg">
       <div class="container">
         <nav class="header">
           <div class="header__logo"></div>
@@ -25,10 +31,16 @@
             </li>
           </ul>
           <ul class="header__menu">
-            <li class="menu__items"><a href="" class="menu__link">Меню</a></li>
-            <li class="menu__items"><a href="" class="menu__link">Меню</a></li>
-            <li class="menu__items"><a href="" class="menu__link">Меню</a></li>
-            <li class="menu__items"><a href="" class="menu__link">Меню</a></li>
+            <li class="menu__items">
+              <a href="" class="menu__link">Про нас</a>
+            </li>
+            <li class="menu__items">
+              <a href="" class="menu__link">Послуги</a>
+            </li>
+            <li class="menu__items">
+              <a href="" class="menu__link">Контакти</a>
+            </li>
+            <!-- <li class="menu__items"><a href="" class="menu__link">Меню</a></li> -->
           </ul>
         </nav>
       </div>
@@ -39,7 +51,7 @@
         <div class="container">
           <div class="hero">
             <div class="hero__img slideRight">
-              <img width="630px" height="300px" src="./img/hero2.jpg" alt="" />
+              <img width="630px" height="330px" src="./img/hero2.jpg" alt="" />
               <!-- <p class="hero__text title">Раді вітати Вас</p> -->
             </div>
             <div>
@@ -48,7 +60,7 @@
             <div class="hero__img--second slideLeft">
               <img width="685px" src="./img/hero.jpg" alt="" />
             </div>
-            <p class="hero__text title slideRight">Раді вітати Вас</p>
+            <p class="hero__text title--second slideRight">Раді вітати Вас</p>
           </div>
         </div>
       </section>
@@ -56,49 +68,61 @@
       <section>
         <div class="container">
           <div class="benefits">
-            <div class="position">
-              <img src="./img/dost.jpg" alt="" />
-              <p class="position__text">Досвід роботи 20 р.</p>
+            <div class="position benefits__bg">
+              <svg class="benefits__icon" width="78" height="77">
+                <use href="./img/icons.svg#xp"></use>
+              </svg>
+              <p class="benefits__text">Досвід роботи 20 років</p>
             </div>
-            <div class="position">
-              <img src="./img/dost.jpg" alt="" />
-              <p class="position__text">Бездоганна репутація</p>
+            <div class="position benefits__bg">
+              <svg class="benefits__icon" width="78" height="77">
+                <use href="./img/icons.svg#star"></use>
+              </svg>
+              <p class="benefits__text">Бездоганна репутація</p>
             </div>
-            <div class="position">
-              <img src="./img/dost.jpg" alt="" />
-              <p class="position__text">Відповідальність</p>
+            <div class="position benefits__bg">
+              <svg class="benefits__icon" width="78" height="77">
+                <use href="./img/icons.svg#resp"></use>
+              </svg>
+              <p class="benefits__text">Відповідальність</p>
             </div>
           </div>
         </div>
       </section>
       <!-- Services -->
-      <section>
+      <section class="services__bg">
         <div class="container">
           <h2 class="title">Послуги</h2>
           <ul class="services">
             <li class="position">
-              <img src="./img/services.jpg" alt="" />
-              <p class="position__text">Бухгалтерські послуги</p>
+              <a href="" alt="" class="services__item">
+                <p class="services__text">Бухгалтерські послуги</p></a
+              >
             </li>
             <li class="position">
-              <img src="./img/services.jpg" alt="" />
-              <p class="position__text">Юридичні послуги</p>
+              <a href="" alt="" class="services__item">
+                <p class="services__text">Юридичні послуги</p></a
+              >
             </li>
             <li class="position">
-              <img src="./img/services.jpg" alt="" />
-              <p class="position__text">Послуги адвоката</p>
+              <a href="" alt="" class="services__item">
+                <p class="services__text">Послуги адвоката</p></a
+              >
             </li>
             <li class="position">
-              <img src="./img/services.jpg" alt="" />
-              <p class="position__text">Кадровий облік</p>
+              <a href="" alt="" class="services__item">
+                <p class="services__text">Кадровий облік</p></a
+              >
             </li>
             <li class="position">
-              <img src="./img/services.jpg" alt="" />
-              <p class="position__text">Охорона праці на підприємстві</p>
+              <a href="" alt="" class="services__item">
+                <p class="services__text">Охорона праці на підприємстві</p></a
+              >
             </li>
             <li class="position">
-              <img src="./img/services.jpg" alt="" />
-              <p class="position__text">Курси бухгалтерів початківців</p>
+              <a href="" alt="" class="services__item">
+                <p class="services__text">Курси бухгалтерів початківців</p></a
+              >
             </li>
           </ul>
         </div>
@@ -125,7 +149,7 @@
               <p class="position__text">Конфіденційність</p>
             </li>
           </ul>
-          <h3 class="title title--second">Як це працює</h3>
+          <h3 class="title--second">Як це працює</h3>
           <ul class="process">
             <li class="process__item">
               <img src="./img/advantages2.jpg" alt="" />
