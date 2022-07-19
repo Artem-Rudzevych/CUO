@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .slideRight {
   animation-name: slideRight;
   -webkit-animation-name: slideRight;
@@ -229,8 +230,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  border: 1px solid #31503b;
-  background-color: #31503b;
+  border: 1px solid #597963;
+  background-color: #597963;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   transition: opacity 250ms linear;
 }
@@ -253,13 +254,6 @@ ul {
   z-index: 1;
 }
 
-.hero {
-  max-width: 1600px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../img/hero.jpg);
-}
-
 .hero__slogan {
   font-weight: 700;
   font-size: 30px;
@@ -268,14 +262,6 @@ ul {
   padding-top: 85px;
   padding-bottom: 400px;
   padding-right: 150px;
-}
-
-.hero__img {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  z-index: 2;
-  box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
 .hero__title {
@@ -290,8 +276,52 @@ ul {
   font-size: 30px;
 }
 
+.hero__title--second {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero__bg {
   background-color: #fff;
+}
+
+.itcss {
+  position: relative;
+  overflow: hidden;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transition: transform 1000ms ease;
+}
+
+/* класс для отключения transition */
+/* стили для элементов */
+.itcss__item {
+  flex: 0 0 100%;
+  max-width: 1600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/hero2.jpg);
+}
+
+.itcss__item:nth-child(1) {
+  background-image: url(../img/hero.jpg);
 }
 
 .benefits {
@@ -305,10 +335,9 @@ ul {
 .benefits__text {
   display: inline-block;
   text-align: center;
-  font-weight: 500;
   font-size: 23px;
   line-height: 24px;
-  padding: 20px 74px;
+  padding: 20px 40px;
 }
 
 .benefits__bg {
