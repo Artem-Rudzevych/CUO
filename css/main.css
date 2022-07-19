@@ -253,9 +253,10 @@ ul {
 }
 
 .hero {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/hero.jpg);
 }
 
 .hero__slogan {
@@ -276,15 +277,16 @@ ul {
   box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
-.hero__text {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  font-size: 30px;
+.hero__title {
+  width: 717px;
+  font-size: 40px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  padding: 241px 0;
 }
-
-.hero__bg {
-  background-color: #fff;
+.hero__title span {
+  font-size: 30px;
 }
 
 .benefits {

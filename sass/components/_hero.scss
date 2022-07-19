@@ -1,7 +1,8 @@
 .hero {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/hero.jpg);
 }
 .hero__slogan {
   font-weight: 700;
@@ -27,13 +28,17 @@
 //   right: 0;
 //   z-index: 1;
 // }
-.hero__text {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  font-size: 30px;
-  // transform: translate(-50%, -50%);
+.hero__title {
+  width: 717px;
+  font-size: 40px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  padding: 241px 0;
+  & span {
+    font-size: 30px;
+  }
 }
-.hero__bg {
-  background-color: #fff;
-}
+// .hero__bg {
+//   background-color: #fff;
+// }
