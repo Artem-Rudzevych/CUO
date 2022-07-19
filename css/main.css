@@ -290,6 +290,10 @@ ul {
   font-size: 30px;
 }
 
+.hero__bg {
+  background-color: #fff;
+}
+
 .benefits {
   display: flex;
   justify-content: space-between;
