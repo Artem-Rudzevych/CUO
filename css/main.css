@@ -97,13 +97,12 @@ html {
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", "Oswald", sans-serif;
   background-color: rgba(227, 227, 224, 0.23);
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
+  line-height: 1.2;
   color: #323440;
 }
 
@@ -156,11 +155,11 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
-  height: 25px;
+  height: 30px;
   background-repeat: no-repeat;
   background-image: url(../img/title.svg);
   filter: drop-shadow(0px 2px 1px rgba(50, 52, 64, 0.4));
@@ -229,8 +228,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  border: 1px solid #f0353c;
-  background-color: #f0353c;
+  border: 1px solid #31503b;
+  background-color: #31503b;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   transition: opacity 250ms linear;
 }
@@ -243,13 +242,14 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  border: 1px solid #f0353c;
-  background-color: #f0353c;
+  border: 2px solid #597963;
+  background-color: #597963;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .hero {
@@ -274,13 +274,6 @@ ul {
   left: 0;
   z-index: 2;
   box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
-}
-
-.hero__img--second {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
 }
 
 .hero__text {
@@ -324,7 +317,7 @@ ul {
 }
 
 .benefits__icon {
-  fill: #f0353c;
+  fill: #597963;
   margin-top: 20px;
 }
 
@@ -346,14 +339,14 @@ ul {
   display: block;
   width: 180px;
   height: 180px;
-  background-color: #f0353c;
-  box-shadow: 0px 0px 23px 3px rgba(240, 53, 60, 0.25);
+  background-color: #597963;
+  box-shadow: 0px 0px 23px 3px rgba(89, 121, 99, 0.25);
   border-radius: 90px;
   transition: background-color 200ms linear;
 }
 
 .services__item:hover {
-  background-color: #323440;
+  background-color: #31503b;
 }
 
 .services__text {
