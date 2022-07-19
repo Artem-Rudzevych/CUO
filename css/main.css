@@ -243,7 +243,7 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
