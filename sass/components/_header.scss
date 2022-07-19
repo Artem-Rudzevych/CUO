@@ -5,6 +5,7 @@
 }
 .header__contact {
   display: flex;
+  margin-right: auto;
   & .contact__items:not(:last-child) {
     margin-right: 20px;
   }

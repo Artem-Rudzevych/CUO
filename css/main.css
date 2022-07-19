@@ -199,6 +199,7 @@ ul {
 
 .header__contact {
   display: flex;
+  margin-right: auto;
 }
 .header__contact .contact__items:not(:last-child) {
   margin-right: 20px;
