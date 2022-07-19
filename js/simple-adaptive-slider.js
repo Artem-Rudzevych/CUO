@@ -10,9 +10,7 @@ class ItcSimpleSlider {
   static CLASS_NAME_ITEM = `${ItcSimpleSlider.PREFIX}__item`;
   static CLASS_NAME_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}__item_active`;
   static CLASS_NAME_ITEMS = `${ItcSimpleSlider.PREFIX}__items`;
-  static CLASS_NAME_INDICATOR = `${ItcSimpleSlider.PREFIX}__indicator`;
-  static CLASS_NAME_INDICATOR_ACTIVE = `${ItcSimpleSlider.PREFIX}__indicator_active`;
-  static CLASS_NAME_INDICATORS = `${ItcSimpleSlider.PREFIX}__indicators`;
+
   static CLASS_NAME_CONTROL = `${ItcSimpleSlider.PREFIX}__control`;
   static CLASS_NAME_CONTROL_PREV = `${ItcSimpleSlider.PREFIX}__control_prev`;
   static CLASS_NAME_CONTROL_NEXT = `${ItcSimpleSlider.PREFIX}__control_next`;
@@ -20,8 +18,7 @@ class ItcSimpleSlider {
   static SELECTOR_ITEMS = `.${ItcSimpleSlider.CLASS_NAME_ITEMS}`;
   static SELECTOR_ITEM = `.${ItcSimpleSlider.CLASS_NAME_ITEM}`;
   static SELECTOR_ITEM_ACTIVE = `.${ItcSimpleSlider.CLASS_NAME_ITEM_ACTIVE}`;
-  static SELECTOR_INDICATOR_ACTIVE = `.${ItcSimpleSlider.CLASS_NAME_INDICATOR_ACTIVE}`;
-  static SELECTOR_INDICATORS = `.${ItcSimpleSlider.CLASS_NAME_INDICATORS}`;
+
   static SELECTOR_WRAPPER = `.${ItcSimpleSlider.PREFIX}__wrapper`;
   static SELECTOR_CONTROL = `.${ItcSimpleSlider.CLASS_NAME_CONTROL}`;
   static SELECTOR_CONTROL_NEXT = `.${ItcSimpleSlider.CLASS_NAME_CONTROL_NEXT}`;
@@ -82,8 +79,8 @@ class ItcSimpleSlider {
     const defaultConfig = {
       autoplay: false,
       loop: true,
-      indicators: true,
-      interval: 3000,
+      indicators: false,
+      interval: 5000,
       swipe: true,
     };
     this._config = Object.assign(defaultConfig, config);
