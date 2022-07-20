@@ -403,11 +403,11 @@ ul {
 }
 
 .benefits__bg:nth-child(1) {
-  background-image: url(../../img/experience.jpg);
+  background-image: url(../img/experience.jpg);
 }
 
 .benefits__bg:nth-child(2) {
-  background-image: url(../../img/reputation.jpg);
+  background-image: url(../img/reputation.jpg);
 }
 
 .benefits__bg:nth-child(3) {
