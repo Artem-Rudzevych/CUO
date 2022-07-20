@@ -80,7 +80,7 @@ class ItcSimpleSlider {
       autoplay: false,
       loop: true,
       indicators: false,
-      interval: 5000,
+      interval: 4000,
       swipe: true,
     };
     this._config = Object.assign(defaultConfig, config);
