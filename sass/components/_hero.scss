@@ -38,8 +38,6 @@
 
 // Slider style
 .itcss {
-  position: relative;
-  overflow: hidden;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -47,9 +45,7 @@
 
 /* стили для wrapper */
 .itcss__wrapper {
-  position: relative;
   overflow: hidden;
-  background-color: #eee;
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
@@ -67,15 +63,21 @@
 .itcss__item {
   flex: 0 0 100%;
   max-width: 1600px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/hero2.jpg);
 }
-
 .itcss__item:nth-child(1) {
   background-image: url(../img/hero.jpg);
+}
+.itcss__item:nth-child(2) {
+  background-image: url(../img/hero2.jpg);
+}
+.itcss__item:nth-child(3) {
+  background-image: url(../img/hero.jpg);
+}
+.itcss__item:nth-child(4) {
+  background-image: url(../img/hero2.jpg);
 }
