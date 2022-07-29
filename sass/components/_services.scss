@@ -11,6 +11,10 @@
 .services .position:not(:last-child) {
   margin-bottom: 5px;
 }
+.box__item {
+  position: relative;
+  margin-bottom: 3px;
+}
 .services__title {
   position: relative;
   display: block;
@@ -28,8 +32,16 @@
   padding: 25px 20px;
   // margin-right: auto;
 }
+// .box__item:nth-child(even) .services__title {
+//   background-image: linear-gradient(
+//     to top,
+//     #597963 15%,
+//     rgba(89, 121, 99, 0.9) 100%
+//   );
+// }
 .services__title::after {
   content: "+";
+  font-size: 24px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -50,10 +62,7 @@
 .services__card p {
   padding: 20px;
 }
-.box__item {
-  position: relative;
-  margin-bottom: 5px;
-}
+
 // .box:nth-child(even) .services__item {
 //   margin-left: auto;
 //   margin-right: 0;
