@@ -11,7 +11,7 @@
 .services .position:not(:last-child) {
   margin-bottom: 5px;
 }
-.services__item {
+.services__title {
   position: relative;
   display: block;
   width: 100%;
@@ -27,27 +27,29 @@
   padding: 30px 20px;
   // margin-right: auto;
 }
-.services__item::after {
+.services__title::after {
   content: "+";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 5%;
 }
-.box.active .services__item::after {
+.box__item.active .services__title::after {
   content: "\2014";
 }
 .services__card {
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: 300ms;
+  transition: 250ms;
 }
-
+.box__item.active .services__card {
+  max-height: 800px;
+}
 .services__card p {
   padding: 20px;
 }
-.box {
+.box__item {
   position: relative;
   margin-bottom: 5px;
 }
