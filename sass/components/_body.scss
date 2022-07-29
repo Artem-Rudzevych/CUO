@@ -104,11 +104,12 @@ ul {
   bottom: 15px;
   width: 60px;
   height: 60px;
-  background-color: gray;
-  fill: black;
+  background-color: rgba(227, 227, 224, 0.23);
+  fill: #597963;
   transform: scale(1);
   transition: transform 200ms linear;
   border-radius: 50%;
+  border: 2px solid #597963;
   cursor: pointer;
   z-index: 2;
 }
