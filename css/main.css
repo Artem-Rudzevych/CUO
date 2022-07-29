@@ -242,6 +242,28 @@ ul {
   line-height: 24px;
 }
 
+.topNubex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  fill: black;
+  transform: scale(1);
+  transition: transform 200ms linear;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#topNubex:hover {
+  transform: scale(1.1);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -464,7 +486,7 @@ ul {
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: 250ms;
+  transition: 450ms;
 }
 
 .box__item.active .services__card {

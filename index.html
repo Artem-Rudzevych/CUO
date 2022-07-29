@@ -21,12 +21,17 @@
     <script src="./js/opacyti-slider.js"></script>
     
  
-  </script>
+  
      
     <link rel="stylesheet" href="./css/main.min.css" />
    
   </head>
   <body>
+    <div style="display: none" id="topNubex" class="topNubex">
+      <svg width="30" height="30" class="top-flex">
+        <use href="./img/icons.svg#arrow-top"></use>
+      </svg>
+    </div>
     <header class="hero__bg">
       <div class="container">
         <nav class="header">
@@ -43,8 +48,8 @@
             <li class="menu__items">
               <a href="" class="menu__link">Про нас</a>
             </li>
-            <li class="menu__items">
-              <a href="" class="menu__link">Послуги</a>
+            <li class="menu__items ">
+              <a href="#service" class="menu__link anсhor ">Послуги</a>
             </li>
             <li class="menu__items">
               <a href="" class="menu__link">Контакти</a>
@@ -110,7 +115,7 @@
       <!-- Services -->
       <section class="services__bg">
         <div class="container">
-          <h2 class="title">Послуги</h2>
+          <h2 id="service"  class="title">Послуги</h2>
           <ul class="services">
             <li class="box__item">           
                 <div  class="services__title">Бухгалтерські послуги</div>
@@ -279,6 +284,8 @@
       </section>
     </footer>
     <script src="./js/accordion.js"></script>
+    <script src="./js/js-lib.js"></script>
+    <script src="./js/link.js" type="module"></script>
     
      
   </body>
