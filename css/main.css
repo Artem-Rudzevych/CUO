@@ -459,10 +459,11 @@ ul {
   position: relative;
   display: block;
   width: 100%;
-  background-color: #597963;
+  background-image: linear-gradient(#597963 15%, rgba(89, 121, 99, 0.9) 100%);
   box-shadow: 0px 0px 23px 3px rgba(89, 121, 99, 0.25);
   transition: background-color 200ms linear;
   border: none;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
