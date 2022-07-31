@@ -198,7 +198,7 @@ ul {
   font-size: 30px;
   line-height: 1.5;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 60px;
 }
 
@@ -262,11 +262,39 @@ ul {
 }
 
 .header__contact {
+  position: relative;
   display: flex;
   margin-right: auto;
 }
 .header__contact .contact__items:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 30px;
+}
+
+.contact__link {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact__link::after {
+  opacity: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%, -50%) scalex(0.2);
+  width: 100%;
+  border: 1px solid #597963;
+  background-color: #597963;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  transition: opacity 200ms linear, transform 200ms linear;
+}
+
+.contact__link:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scalex(1);
 }
 
 .header__menu {
@@ -289,6 +317,7 @@ ul {
   content: "";
   display: block;
   position: absolute;
+  bottom: 16px;
   left: 50%;
   transform: translate(-50%, -50%) scalex(0.2);
   width: 100%;
@@ -315,6 +344,11 @@ ul {
   background-color: #597963;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   z-index: 1;
+}
+
+.header-contact__icon {
+  fill: #323440;
+  margin-right: 10px;
 }
 
 .hero__slogan {
@@ -511,7 +545,7 @@ ul {
 
 .advantages {
   display: block;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .advantages__sub-title {
@@ -582,7 +616,7 @@ ul {
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 25px;
   font-size: 20px;
 }
