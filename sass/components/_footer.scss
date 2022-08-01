@@ -1,7 +1,16 @@
 .footer {
-  background-color: rgba(128, 128, 128, 0.686);
-  padding: 70px 0;
+  background-color: #597963;
+  padding: 60px 0;
 }
 .footer-contact__item {
   padding: 5px 0;
+  & a {
+    color: #fff;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.footer-contact__list {
+  display: flex;
 }
