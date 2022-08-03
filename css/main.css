@@ -649,8 +649,4 @@ ul {
 }
 .footer-contact__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.footer-contact__list {
-  display: flex;
 }/*# sourceMappingURL=main.css.map */
